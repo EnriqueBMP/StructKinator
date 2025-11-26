@@ -1,0 +1,131 @@
+{
+  "name": "structkinator",
+  "version": "1.0.0",
+  "description": "Sistema guiado de decisión de estructuras de datos",
+  "main": "main.js",
+  "homepage": "./",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder",
+    "build-win": "electron-builder --win",
+    "build-mac": "electron-builder --mac",
+    "build-linux": "electron-builder --linux",
+    "build-all": "electron-builder --win --mac --linux",
+    "dist": "npm run build-all"
+  },
+  "keywords": [
+    "electron",
+    "estructuras",
+    "datos",
+    "educación",
+    "algoritmos"
+  ],
+  "author": {
+    "name": "Structkinator Team",
+    "email": "team@structkinator.com"
+  },
+  "license": "MIT",
+  "build": {
+    "appId": "com.structkinator.app",
+    "productName": "Structkinator",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
+      "!**/node_modules/*.d.ts",
+      "!**/node_modules/.bin",
+      "!**/*.{iml,o,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,xproj}",
+      "!.editorconfig",
+      "!**/._*",
+      "!**/{.DS_Store,.git,.hg,.svn,CVS,RCS,SCCS,.gitignore,.gitattributes}",
+      "!**/{__pycache__,thumbs.db,.flowconfig,.idea,.vs,.nyc_output}",
+      "!**/{appveyor.yml,.travis.yml,circle.yml}",
+      "!**/{npm-debug.log,yarn.lock,.yarn-integrity,.yarn-metadata.json}"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
+      "icon": "assets/icon.ico",
+      "publisherName": "Structkinator Team"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Structkinator"
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.icns",
+      "category": "public.app-category.education",
+      "darkModeSupport": true
+    },
+    "linux": {
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "deb",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "rpm",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.png",
+      "category": "Education",
+      "desktop": {
+        "Name": "Structkinator",
+        "Comment": "Sistema guiado de decisión de estructuras de datos",
+        "Categories": "Education;Development;"
+      }
+    },
+    "portable": {
+      "artifactName": "Structkinator-portable.exe"
+    }
+  },
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/structkinator.git"
+  }
+}

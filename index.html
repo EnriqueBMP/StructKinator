@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structkinator - Sistema de Decision de Estructuras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Pantalla de inicio -->
+        <div id="start-screen" class="screen active">
+            <div class="screen-content">
+                <div class="left-panel">
+                    <div class="image-container">
+                        <img src="assets/cat.png" alt="Structkinator Cat" class="cat-image" id="main-cat-image">
+                    </div>
+                </div>
+                <div class="right-panel">
+                    <div class="header">
+                        <h1>STRUCTKINATOR</h1>
+                        <div class="subtitle">Sistema Guiado de Decisión de Estructuras de Datos</div>
+                    </div>
+                    
+                    <div class="welcome-message">
+                        <p>Responde las siguientes preguntas para determinar la estructura de datos más adecuada para tu caso de uso.</p>
+                    </div>
+                    
+                    <button id="start-btn" class="btn-primary">Comenzar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pantalla de preguntas -->
+        <div id="question-screen" class="screen">
+            <div class="screen-content">
+                <div class="left-panel">
+                    <div class="image-container">
+                        <img src="assets/cat.png" alt="Structkinator Cat" class="cat-image" id="question-cat-image">
+                    </div>
+                </div>
+                <div class="right-panel">
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div id="progress-fill" class="progress-fill"></div>
+                        </div>
+                        <div id="progress-text" class="progress-text">Pregunta 1/8</div>
+                    </div>
+
+                    <div class="question-container">
+                        <h2 id="question-text"></h2>
+                        
+                        <div class="buttons-container">
+                            <button id="yes-btn" class="btn-yes">SÍ</button>
+                            <button id="no-btn" class="btn-no">NO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pantalla de resultados -->
+        <div id="result-screen" class="screen">
+            <div class="screen-content">
+                <div class="left-panel">
+                    <div class="image-container">
+                        <img id="result-structure-image" src="" alt="Estructura de datos" class="structure-image">
+                    </div>
+                </div>
+                <div class="right-panel">
+                    <div class="result-content">
+                        <div class="header">
+                            <h2>RECOMENDACIÓN FINAL</h2>
+                        </div>
+                        
+                        <div id="result-title" class="result-title"></div>
+                        <div id="result-description" class="result-description"></div>
+                        
+                        <div id="result-diagram" class="structure-diagram"></div>
+                        
+                        <div id="result-details" class="result-details"></div>
+                        
+                        <div class="result-actions">
+                            <button id="restart-btn" class="btn-primary">Realizar otra consulta</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
