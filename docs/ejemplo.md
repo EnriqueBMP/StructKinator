@@ -1,6 +1,4 @@
-1. Inserción
-text
-````markdown
+
 1. Inserción
 
 FUNCTION insertContact(root, newContact)
@@ -121,7 +119,7 @@ Este ejemplo ilustra cómo la elección correcta de estructura de datos impacta 
 
 ## 5. tests/decisionEngine.test.js
 
-```javascript
+
 const { decideStructure } = require('../src/utils/decisionEngine');
 
 describe('Decision Engine Tests', () => {
@@ -170,4 +168,5 @@ describe('Decision Engine Tests', () => {
     expect(decideStructure(...answers)).toBe('DS_BST');
   });
 });
+
 ````
