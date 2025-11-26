@@ -25,3 +25,7 @@ npm start
 
 # Construir para producción
 npm run build
+
+
+Presentación 25 de noviembre:
+https://www.canva.com/design/DAG5Lt30uPE/3rGAkx3f8BK0SJ-9QQV9hg/edit
