@@ -28,4 +28,4 @@ npm run build
 
 
 Presentación 25 de noviembre:
-https://www.canva.com/design/DAG5Lt30uPE/3rGAkx3f8BK0SJ-9QQV9hg/edit
+[https://www.canva.com/design/DAG5Lt30uPE/3rGAkx3f8BK0SJ-9QQV9hg/edit](https://www.canva.com/design/DAG5Lt30uPE/3rGAkx3f8BK0SJ-9QQV9hg/edit?utm_content=DAG5Lt30uPE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
