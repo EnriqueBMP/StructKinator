@@ -12,7 +12,7 @@ Structkinator es una aplicación educativa que guía a los usuarios en la selecc
 - **Grafos** (Lista de Adyacencia)
 - **Tries** (Árbol de Prefijos)
 
-- ```bash
+  -bash
 # Clonar el repositorio
 git clone https://github.com/tu-usuario/structkinator.git
 cd structkinator
